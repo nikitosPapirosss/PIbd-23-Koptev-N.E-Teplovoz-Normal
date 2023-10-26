@@ -34,7 +34,6 @@
             this.buttonUp = new System.Windows.Forms.Button();
             this.buttonRight = new System.Windows.Forms.Button();
             this.buttonLeft = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeplovoz)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,22 +111,11 @@
             this.buttonLeft.UseVisualStyleBackColor = false;
             this.buttonLeft.Click += new System.EventHandler(this.buttonMove_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(258, 439);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // WarmlyLocomotive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 461);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonLeft);
             this.Controls.Add(this.buttonRight);
             this.Controls.Add(this.buttonUp);
@@ -151,6 +139,5 @@
         private Button buttonUp;
         private Button buttonRight;
         private Button buttonLeft;
-        private Label label1;
     }
 }
