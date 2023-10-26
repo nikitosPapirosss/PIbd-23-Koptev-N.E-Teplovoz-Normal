@@ -5,7 +5,6 @@ namespace WarmlyLocomotive
     public partial class WarmlyLocomotive : Form
     {
         private DrawningTeplovoz? _drawningTeplovoz;
-        Class1 step = new Class1();
         public WarmlyLocomotive()
         {
             InitializeComponent();
@@ -27,7 +26,6 @@ namespace WarmlyLocomotive
             _drawningTeplovoz.DrawTransport(gr);
             pictureBoxTeplovoz.Image = bmp;
         }
-
 
         private void buttonCreate_Click(object sender, EventArgs e)
         {
@@ -67,9 +65,7 @@ namespace WarmlyLocomotive
                     _drawningTeplovoz.MoveTransport(DirectionType.Right);
                     break;
             }
-            label1.Text ="Steps="+step.Step().ToString();
             Draw();
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
